@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- links -->
+    <link rel="icon" type="jpg" src="https://i.ibb.co/q3TpDRvR/icon.jpg"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Title -->
+    <title>huzaifa Yusuf Hussaini Weather App</title>
+  </head>
+ <body>
+     <!-- Loading Screen -->
+    <div class="loading-screens" id="loadingScreen">
+        <div class="loading-containers">
+            <h1 class="app-titles">Weather Forecast app</h1>
+            <p class="developers-name">develop by Huzaifa Yusuf Hussaini</p>
+            
+            <div class="weathers-animation">
+                <div class="suns"></div>
+                <div class="clouds clouds-1"></div>
+                <div class="clouds clouds-2"></div>
+                <div class="raindrop"></div>
+                <div class="raindrop"></div>
+                <div class="raindrop"></div>
+                <div class="raindrop"></div>
+                <div class="raindrop"></div>
+            </div>
+            
+            <div class="loading-infos">
+                <div class="percentages">0%</div>
+                <p class="loading-texts">Initializing weather application...</p>
+                
+                <div class="loading-bar-containers">
+                    <div class="loading-bars"></div>
+                </div>
+                
+                <div class="cycles-animation">
+                    <div class="cycle-dot"></div>
+                    <div class="cycle-dot"></div>
+                    <div class="cycle-dot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Browser Header -->
+    <div class="browser-header">
+        <div class="browser-controls">
+            <div class="controls closes"></div>
+            <div class="controls minimizes"></div>
+            <div class="controls maximizes"></div>
+        </div>
+      
+    </div>
+
+    <!-- Weather App Content (Hidden until loading completes) -->
+    <div class="weathers-app" id="weatherApp" >
+      <!-- COMPLETELY PLAIN CONTENT AREA - ADD YOUR CONTENT HERE -->
+        <div class="content-area">            
+     
+    <!-- main section -->
+    <div id="screen">
+      <!-- city name -->
+      <div class="city-name">
+          <i class="fa-solid fa-map-pin"></i>
+          <h1 id="city-name">KANO</h1>
+        </div>
+        <!-- weather icon -->
+        <div class="weather-icon-css">
+          <img class="weather-icons"src="https://i.ibb.co/5WGhkJdT/sun.jpg" alt="sun" border="0"/>
+        </div>
+        <!-- weather details -->
+<div class="weather-description">
+          <div class="show-metric" id="metric">0°</div>
+          <div class="weather-details">
+            <div class="weather-main" id="weather-main">Sunnen</div>
+            <div class="h-f">
+              <div class="show-humidity">H: <span id="humidity">60</span></div>
+              ||
+              <div class="show-humidity">
+                F: <span id="feels-like">60</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Today-forecast -->
+        <div class="forcasts-box">
+          <div class="today-forecast">
+            <h4>TODAY</h4>
+            <div class="weather-icon-today">
+              <img class="weather-icons"src="https://i.ibb.co/5WGhkJdT/sun.jpg" alt="sun" border="0"/>
+            </div>
+            <div class="temp-today">
+              <span id="temp-min-today">50°</span><span>/ </span
+              ><span id="temp-max-today">55°</span>
+            </div>
+            <div class="weather-main-today" id="weather-main">Sunnen</div>
+          </div>
+
+          <!-- 5day Forecast -->
+          <div class="future-forecast">
+            <h5>6-DAYS FORECAST</h5>
+            <div id="future-forecast-box"></div>
+          </div>
+        </div>
+        <!-- nav section -->
+        <nav>
+          <ul>
+            <li>
+              <a class="active" href="index.html"
+                ><i class="fa-solid fa-location-arrow"></i
+              ></a>
+            </li>
+            <li>
+              <a href="search.html"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+            </li>
+            <li>
+              <a href="world.html"><i class="fa-solid fa-earth-americas"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <footer>
+             <a href="mailto: uzaifayusuf364@gmail.com">Huzaifa Yusuf Hussaini</a> | <span class="far fa-copyright"></span>© 2025 All Rights Reserved. Privacy Policy
+        </span>
+        </footer>
+                      <!-- Your weather content goes here - completely unstyled -->
+            <div class="browser-footer">
+        <div class="status-message" id="statusMessage">  </div>
+        <div class="browser-info"></div>
+    </div>     
+            
+            
+        </div>
+    </div>
+
+      <!-- script -->
+    <script src="js/script.js"></script>
+    
+    
+        
+  </body>
+  </html>
